@@ -60,7 +60,7 @@ class App extends Component {
         </div>
       </div>
       <p>Type in a path to enter a room, all players in the same room well share the same results.</p>
-      <p>Example: http://dice.yinyan.fr/12345 for room 12345</p>
+      <p>Example: http://web_address/12345 for room 12345</p>
 
         <div>
           {
