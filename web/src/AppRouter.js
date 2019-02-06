@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Link} from "react-router-dom"
 import App from "./App"
 
-const Main = () => <App />
+const Main = () => <App io="http://localhost:2019" />
 
 const AppRouter = () => (
 

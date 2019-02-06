@@ -9,9 +9,9 @@ const getRoom = url => parse(url).pathname.split("/")[1]
 
 const msgParse = msg => msg.split(/ *d */)
 
-const randint = (start, end) => parseInt(start + Math.random() * (end - start))
+const randint = (start, end) => Math.floor(start + Math.random() * (end - start + 1))
 
-const dice = (faces, times) => (new Array(times)).fill(0).map(e => randint(0, faces) + 1)
+const dice = (faces, times) => (new Array(times)).fill(0).map(e => randint(1, faces))
 
 const sum = arr => arr.reduce((a, b) => a + b)
 
